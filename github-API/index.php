@@ -3,7 +3,7 @@
 $ch = curl_init();
 
 $headers = [
-    "Authorization: token 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",
+    "Authorization: token gitlabtoken",
     "User-Agent: berain-uvic"
 ];
 

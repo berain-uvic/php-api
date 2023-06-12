@@ -3,7 +3,7 @@
 $ch = curl_init();
 
 $headers = [
-    "Authorization: Client-ID xvelbbgWYXyThWmAWHxI5_H_lOFnpsLO_x9g-XEEAk8"
+    "Authorization: Client-ID clientidgoeshere"
 ];
 
 $response_headers = [];

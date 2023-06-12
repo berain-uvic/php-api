@@ -6,7 +6,7 @@ $ch = curl_init();
 // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 curl_setopt_array($ch, [
-    CURLOPT_URL => "https://api.openweathermap.org/data/2.5/weather?q=London&APPID=fa8d7272486ce00bee71aa442adb97a6",
+    CURLOPT_URL => "https://api.openweathermap.org/data/2.5/weather?q=London&APPID=weatherid",
     CURLOPT_RETURNTRANSFER => true
 ]);
 
