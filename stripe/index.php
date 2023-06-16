@@ -2,12 +2,14 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
+$ini_array = parse_ini_file("../config.ini");
+
 $client = new GuzzleHttp\Client();
 
 $response = $client->request("GET", "https://api.github.com/user/repos", [
     "headers" => [
-        "Authorization" => "token gitalabtoken",
-        "User-Agent" => "berain-uvic",
+        "Authorization" => "token " . $ini_array["GITLAB_TOKEN"],
+        "User-Agent" => $ini_array["GITLAB_USER_AGENT"],
     ]
 ]);
 

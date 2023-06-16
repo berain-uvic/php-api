@@ -1,10 +1,12 @@
 <?php
 
+$ini_array = parse_ini_file("../config.ini");
+
 $ch = curl_init();
 
 $headers = [
-    "Authorization: token gitlabtoken",
-    "User-Agent: berain-uvic"
+    "Authorization: token " . $ini_array["GITLAB_TOKEN"],
+    "User-Agent: " . $ini_array["GITLAB_USER_AGENT"]
 ];
 
 curl_setopt_array($ch, [
